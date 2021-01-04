@@ -1,10 +1,14 @@
 import React from "react";
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
   return (
-    <div className="AppHeader">
-      <p className="AppParagraph"></p>
-    </div>
+    <Provider store={store}>
+      <div data-test="AppHeader">
+        <p data-test="AppParagraph"></p>
+      </div>
+    </Provider>
   );
 }
 
