@@ -10,3 +10,4 @@ test('Testing Mock Function', () =>{
     const counter = mockFunction.mock.calls.length;
     expect(counter).toBe(10);
 });
+
