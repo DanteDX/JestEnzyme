@@ -11,8 +11,9 @@ describe('Testing Connected components',() =>{
 
     test("Testing Sample Component",() =>{
         const wrapper = shallow(<Sample store={store} />).childAt(0).dive();
-        console.log(wrapper.debug());
+        // console.log(wrapper.debug());
         const g = wrapper.find(".sample");
         expect(g.length).toBe(1);
     })
 })
+
